@@ -1,6 +1,6 @@
 # Desafio
 
-## 1)Clonar el repositorio  y dentro del directorio ejecutar el siguiente comando
+## Clonar el repositorio  y dentro del directorio ejecutar el siguiente comando
 ```
 npm install
 ```
@@ -10,11 +10,20 @@ npm install
 npm run serve
 ```
 
-### Para probar el api solo es necesario hacer cualquier cambio en el proyecto luego hacer un commit para luego hacer un git push 
+### Modificar un cambio superficial y hacer el commit
 ```
 git commit -m "add ..."
+
+```
+
+### Subir esos cambios al repositorio
+```
 git push
 ```
-### El commit nuevo se vera en la vista agregada
+### El nuevo commit se vera en la vista automaticamente
+
+
+
+### No es necesario especificarle una rama porque por defecto toma por la de defecto
 
 
