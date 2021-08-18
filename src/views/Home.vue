@@ -67,7 +67,7 @@ export default {
 
 }
 .dip{
-  width: 100vw;
+  width: 18rem;
   margin-bottom: 10px;
 }
 @media (min-width:768px) {
