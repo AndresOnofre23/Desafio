@@ -3,8 +3,8 @@
     <div class="row gx-5">
       <div class="col">
         <h1 class="titulo">Test</h1>
-        <div class="card" style="width: 38rem">
-          <div class="card-body">
+        <div class="card dip">
+          <div class="card-body dip">
             <h5 class="card-title">Objetive</h5>
             <p class="card-text">
               The goal of this test will be to create an app that shows git
@@ -19,14 +19,12 @@
 
       <div class="col">
         <h1 class="titulo">Commits history</h1>
-        <div class="">
           <div
             v-for="(item, index) in commits"
             :key="index"
-            class="card cards"
-            style="width: 38rem"
+            class="card dip"
           >
-            <div class="card-body">
+            <div class="card-body dip">
               <h5 class="card-title">Commit- {{ item.id }}</h5>
               <br />
               <ul class="list-group list-group">
@@ -34,7 +32,6 @@
                 <li class="list-group-item">Autor:   {{ item.autor }}</li>
               </ul>
             </div>
-          </div>
         </div>
       </div>
     </div>
@@ -58,9 +55,7 @@ export default {
 </script>
 
 <style scoped>
-.caja {
-  margin-top: 10px;
-}
+
 .titulo {
   text-align: center;
 }
@@ -70,5 +65,14 @@ export default {
   align-items: center;
   margin-bottom: 12px;
 
+}
+.dip{
+  width: 100vw;
+  margin-bottom: 10px;
+}
+@media (min-width:768px) {
+    .dip {
+        width: 38rem;
+    }
 }
 </style>

@@ -12,10 +12,9 @@
 
 <style>
  .footer {
-  
   bottom: 0;
   width: 100%;
-  align-self: flex-end;
+  
  }
  .letra{
      font-weight: bold;
