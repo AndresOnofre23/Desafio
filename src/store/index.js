@@ -18,7 +18,7 @@ export default createStore({
     async loadCommits({ commit }) {
       try {
         const rest = await fetch(
-          "https://api.github.com/repos/AndresOnofre23/Angular-Bases/commits"
+          "https://api.github.com/repos/AndresOnofre23/Desafio/commits"
         );
         const data = await rest.json();
         console.log(data);

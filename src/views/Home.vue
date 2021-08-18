@@ -19,12 +19,21 @@
 
       <div class="col">
         <h1 class="titulo">List of Commits</h1>
-        <div class="card" style="width: 38rem">
-          <div class="card-body">
-            <h5 class="card-title">Descending list</h5><br>
-            <ol class="list-group list-group-numbered">
-              <li class="list-group-item">Cras justo odio</li>
-            </ol>
+        <div class="">
+          <div
+            v-for="(item, index) in commits"
+            :key="index"
+            class="card cards"
+            style="width: 38rem"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Commit- {{ item.id }}</h5>
+              <br />
+              <ul class="list-group list-group">
+                <li class="list-group-item">Autor: {{ item.autor }}</li>
+                <li class="list-group-item">Mensaje: {{ item.message }}</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -32,9 +41,19 @@
   </div>
 </template>
 <script>
+import { mapActions, mapState } from "vuex";
 export default {
   name: "Home",
   components: {},
+  methods: {
+    ...mapActions(["loadCommits"]),
+  },
+  created() {
+    this.loadCommits();
+  },
+  computed: {
+    ...mapState(["commits"]),
+  },
 };
 </script>
 
@@ -44,5 +63,12 @@ export default {
 }
 .titulo {
   text-align: center;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+
 }
 </style>
