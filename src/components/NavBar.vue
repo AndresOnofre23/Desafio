@@ -6,18 +6,8 @@
         <img src="../assets/logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
         <span class="fs-4 px-3">Take-Home Test</span>
       </a>
-
-      
      </div>
     </header>
   </div>
 
 </template>
-
-<script>
-export default {};
-</script>
-
-<style>
-
-</style>

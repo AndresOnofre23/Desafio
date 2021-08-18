@@ -1,19 +1,20 @@
-# desafio
+# Desafio
 
-## Project setup
+## 1)Clonar el repositorio  y dentro del directorio ejecutar el siguiente comando
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Para visualizar el proyecto ejecutar el comando
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Para probar el api solo es necesario hacer cualquier cambio en el proyecto luego hacer un commit para luego hacer un git push 
 ```
-npm run build
+git commit -m "add ..."
+git push
 ```
+### El commit nuevo se vera en la vista agregada
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+

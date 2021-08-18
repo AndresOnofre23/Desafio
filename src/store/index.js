@@ -2,11 +2,6 @@ import { createStore } from "vuex";
 
 export default createStore({
   state: {
-    commit: {
-      id: "",
-      message: "",
-      autor: "",
-    },
     commits: [],
   },
   mutations: {
@@ -21,7 +16,6 @@ export default createStore({
           "https://api.github.com/repos/AndresOnofre23/Desafio/commits"
         );
         const data = await rest.json();
-        console.log(data);
         const array2 = [];
         data.forEach((element) => {
           const obj = {
@@ -29,13 +23,12 @@ export default createStore({
             message: "",
             autor: "",
           };
-          obj.id=element.commit.tree.sha;
-          obj.message=element.commit.message;
-          obj.autor=element.commit.author.name;
+          obj.id = element.commit.tree.sha;
+          obj.message = element.commit.message;
+          obj.autor = element.commit.author.name;
           array2.push(obj);
         });
-        commit('load',array2);
-        console.log(array2);
+        commit("load", array2);
       } catch (error) {
         console.log(error);
       }

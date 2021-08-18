@@ -18,7 +18,7 @@
       </div>
 
       <div class="col">
-        <h1 class="titulo">List of Commits</h1>
+        <h1 class="titulo">Commits history</h1>
         <div class="">
           <div
             v-for="(item, index) in commits"
@@ -30,8 +30,8 @@
               <h5 class="card-title">Commit- {{ item.id }}</h5>
               <br />
               <ul class="list-group list-group">
-                <li class="list-group-item">Autor: {{ item.autor }}</li>
                 <li class="list-group-item">Mensaje: {{ item.message }}</li>
+                <li class="list-group-item">Autor:   {{ item.autor }}</li>
               </ul>
             </div>
           </div>
